@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".DiekoActivity">
+
+    <item
+        style="@style/AppTheme"
+        android:title="Pizza Icon"
+        android:id="@+id/diekopizza"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        android:orderInCategory="1" />
+
+    <item
+        style="@style/AppTheme"
+        android:id="@+id/diekohelp"
+        android:title="@string/help"
+        app:showAsAction="never" />
+
+    <item
+        style="@style/AppTheme"
+        android:id="@+id/diekohmenu"
+        android:title="@string/my_name"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2" />
+
+
+</menu>

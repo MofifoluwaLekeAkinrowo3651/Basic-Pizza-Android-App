@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkinrowoActivity2">
+
+    <ImageView
+        android:id="@+id/diekocart"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/checkout_logo" />
+
+    <EditText
+        android:id="@+id/diekoet"
+        android:layout_width="223dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="532dp"
+        android:ems="20"
+        android:digits="abcdefghijklmnopqrstuvwxyz"
+        android:inputType="textPersonName"
+        android:hint="@string/name_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/diekoet2"
+        android:layout_width="223dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="464dp"
+        android:ems="19"
+        android:inputType="numberSigned"
+        android:hint="@string/cc_num_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dieko_mscard"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mscard_logo" />
+
+    <ImageView
+        android:id="@+id/dieko_visa"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/visa_logo" />
+
+    <EditText
+        android:id="@+id/diekoet3"
+        android:layout_width="64dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="416dp"
+        android:ems="3"
+        android:hint="@string/security_pin"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/diekopostc"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="416dp"
+        android:ems="7"
+        android:hint="@string/post_code"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/diekocheckout"
+        style="@style/regular_text"
+        android:layout_width="115dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="148dp"
+        android:text="   CHECKOUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diekoaccept"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/we_accept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/diekoaddress"
+        android:layout_width="392dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="348dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/address"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/diekoorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/diekocartView"-->
+<!--        android:layout_width="193dp"-->
+<!--        android:layout_height="255dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="92dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <Spinner
+        android:id="@+id/dieko_province"
+        android:layout_width="186dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

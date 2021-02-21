@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Dieko Akinrowo Assign2</string>
+    <string name="help">Help</string>
+    <string name="my_name">Dieko</string>
+    <string name="choose_pizza">Choose a pizza place</string>
+    <string name="pizza_pizza">Pizza Pizza</string>
+    <string name="pizza_hut">Pizza Hut</string>
+    <string name="next_btn_mess">NEXT</string>
+    <string name="menu_toast">Now Loading Dominos.ca</string>
+    <string name="load_mess">Loading...</string>
+    <string name="hello_mess">Hello</string>
+    <string name="pizzapizza">Pizza Pizza</string>
+    <string name="dominos">Dominos</string>
+    <string name="pizzahut">Pizza Hut</string>
+    <string name="prompt">Please choose an option to proceed</string>
+    <string name="ppchoice">You chose Pizza Pizza</string>
+    <string name="dominoschoice">You chose Dominos</string>
+    <string name="phutchoice">You chose Pizza Hut</string>
+    <string name="pan_made">Pan-made</string>
+    <string name="flat_pizza">Flat Pizza</string>
+    <string name="hand_tossed">Hand-Tossed</string>
+    <string name="olives">Olives</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="chicken">Chicken</string>
+    <string name="bbq_sauce">BBQ Sauce</string>
+    <string name="extra_cheese">Extra cheese</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="topping">TOPPING</string>
+    <string name="x_large">X-LARGE</string>
+    <string name="large">LARGE</string>
+    <string name="medium">MEDIUM</string>
+    <string name="small">SMALL</string>
+    <string name="size">SIZE</string>
+    <string name="type">TYPE</string>
+    <string name="name_hint">Name on Card</string>
+    <string name="cc_num_hint">xxxx xxxx xxxx xxxx</string>
+    <string name="security_pin">xxx</string>
+    <string name="post_code">i.e. X1X 3X5</string>
+    <string name="address">Address</string>
+    <string name="order">ORDER</string>
+    <string name="we_accept">we accept:</string>
+    <string name="enter_name">Please enter name</string>
+    <string name="enter_card">Please card number</string>
+
+</resources>

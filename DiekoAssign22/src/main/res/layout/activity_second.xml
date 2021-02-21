@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pepperoni"
+    tools:context=".AkinrowoActivity">
+
+
+    <TextView
+        android:id="@+id/diekosize"
+        style="@style/header_text"
+        android:layout_width="88dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diekotype"
+        style="@style/header_text"
+        android:layout_width="88dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/diekosizergroup"
+        android:layout_width="178dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="232dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/diekosm"
+            style="@style/regular_text2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/small" />
+
+        <RadioButton
+            android:id="@+id/diekomed"
+            style="@style/regular_text2"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/diekolg"
+            style="@style/regular_text2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/large" />
+
+        <RadioButton
+            android:id="@+id/diekoxlg"
+            style="@style/regular_text2"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="@string/x_large" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/diekocheckBox"
+        style="@style/regular_text2"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/pepperoni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/diekocheckBox2"
+        style="@style/regular_text2"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="152dp"
+        android:text="@string/extra_cheese"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/diekocheckBox3"
+        style="@style/regular_text2"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/bbq_sauce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/diekocheckBox4"
+        style="@style/regular_text2"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/chicken"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/diekocheckBox5"
+        style="@style/regular_text2"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="152dp"
+        android:text="@string/pineapple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/diekocheckBox6"
+        style="@style/regular_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/olives"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/diekonext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next_btn_mess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/diekotypergroup"
+        android:layout_width="178dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/diekopan"
+            style="@style/regular_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_made"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/diekoflat"
+            style="@style/regular_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flat_pizza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.938"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/diekotossed"
+            style="@style/regular_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hand_tossed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/diekotopping"
+        style="@style/header_text"
+        android:layout_width="188dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="312dp"
+        android:text="@string/topping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

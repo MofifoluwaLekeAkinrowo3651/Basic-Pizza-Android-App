@@ -1,0 +1,7 @@
+include ':StylesExample'
+include ':MenusExample'
+include ':MenuActionBarExample'
+include ':AlertDialog'
+include ':ProgressBar'
+include ':DiekoAssign22'
+rootProject.name = "DiekoAssign2"
