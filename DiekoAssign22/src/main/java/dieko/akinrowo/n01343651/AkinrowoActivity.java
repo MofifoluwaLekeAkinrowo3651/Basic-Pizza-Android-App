@@ -54,13 +54,16 @@ public class AkinrowoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String error = new String();
                 if(!small.isChecked() && !medium.isChecked() && !large.isChecked() && !xlarge.isChecked()) {
-                    error+="Please select size.";
+                    error+="" +
+                            "Please select size.";
                 }
                 if(!panmade.isChecked() && !flat.isChecked() && !tossed.isChecked()) {
-                    error+="\nPlease select type.";
+                    error+="\n" +
+                            "Please select type.";
                 }
                 if(!pepperoni.isChecked() && !chicken.isChecked() && !olives.isChecked() && !xcheese.isChecked() && !pineapple.isChecked() && !bbqs.isChecked()) {
-                    error+="\nPlease choose at least once topping.";
+                    error+="\n" +
+                            "Please choose at least once topping.";
                 }
                 if((small.isChecked() || medium.isChecked() || large.isChecked() || xlarge.isChecked()) &&
                   (panmade.isChecked() || flat.isChecked() || tossed.isChecked()) &&

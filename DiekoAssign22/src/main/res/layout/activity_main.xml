@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/pizza_pizza"
-            android:onClick="onRadioButtonClicked"/>
+            />
 
         <RadioButton
             android:id="@+id/dieko_dominos"
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dominos"
-            android:onClick="onRadioButtonClicked"/>
+            />
 
         <RadioButton
             android:id="@+id/dieko_phut"
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/pizza_hut"
-            android:onClick="onRadioButtonClicked"/>
+            />
     </RadioGroup>
 
     <Button
@@ -63,5 +63,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-
+<!--    android:onClick="onRadioButtonClicked"-->
 </androidx.constraintlayout.widget.ConstraintLayout>

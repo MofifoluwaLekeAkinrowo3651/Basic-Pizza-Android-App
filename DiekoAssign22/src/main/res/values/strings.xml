@@ -41,5 +41,6 @@
     <string name="we_accept">we accept:</string>
     <string name="enter_name">Please enter name</string>
     <string name="enter_card">Please card number</string>
+    <string name="order_placed">ORDER PLACED</string>
 
 </resources>

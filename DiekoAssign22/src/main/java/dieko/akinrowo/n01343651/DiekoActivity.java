@@ -90,29 +90,29 @@ return true;
 
 }
 
-    public void onRadioButtonClicked(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-        String string ="";
-        // Check which RadioButton was clicked
-        switch(view.getId()) {
-            case R.id.dieko_pp:
-                if (checked)
-                    string = getString(R.string.ppchoice);
-                break;
-
-            case R.id.dieko_dominos:
-                if (checked)
-                    string = getString(R.string.dominoschoice);
-                break;
-
-        case R.id.dieko_phut:
-                if (checked)
-                    string = getString(R.string.phutchoice);
-                break;
-        }
-        Toast.makeText(getApplicationContext(), string, Toast.LENGTH_SHORT).show();
-
-}
+//    public void onRadioButtonClicked(View view) {
+//        boolean checked = ((RadioButton) view).isChecked();
+//        String string ="";
+//        // Check which RadioButton was clicked
+//        switch(view.getId()) {
+//            case R.id.dieko_pp:
+//                if (checked)
+//                    string = getString(R.string.ppchoice);
+//                break;
+//
+//            case R.id.dieko_dominos:
+//                if (checked)
+//                    string = getString(R.string.dominoschoice);
+//                break;
+//
+//        case R.id.dieko_phut:
+//                if (checked)
+//                    string = getString(R.string.phutchoice);
+//                break;
+//        }
+//        Toast.makeText(getApplicationContext(), string, Toast.LENGTH_SHORT).show();
+//
+//}
 
     @Override
     public void onBackPressed() {
