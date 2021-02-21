@@ -32,6 +32,26 @@ public class AkinrowoActivity2 extends AppCompatActivity implements AdapterView.
         EditText postcode = findViewById(R.id.diekopostc);
         EditText address = findViewById(R.id.diekoaddress);
 
+        Spinner province = findViewById(R.id.dieko_province);
+        province.setOnItemSelectedListener(this);
+        List<String> provinces = new ArrayList<>();
+        provinces.add("Alberta");
+        provinces.add("British Columbia");
+        provinces.add("Manitoba");
+        provinces.add("New Brunswick");
+        provinces.add("Newfoundland and Labrador");
+        provinces.add("Nunavut");
+        provinces.add("Ontario");
+        provinces.add("Prince Edward Island");
+        provinces.add("Quebec");
+        provinces.add("Saskatchewan");
+        provinces.add("Yukon");
+
+
+        ArrayAdapter array = new ArrayAdapter(this, android.R.layout.simple_spinner_item, provinces);
+        array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        province.setAdapter(array);
+
         Button order = findViewById(R.id.diekoorder);
         order.setOnClickListener(v -> {
             if (name.getText().toString().trim().equalsIgnoreCase("")) {
@@ -96,36 +116,17 @@ public class AkinrowoActivity2 extends AppCompatActivity implements AdapterView.
                 }
             });
 
-            Spinner province = findViewById(R.id.dieko_province);
-            province.setOnItemSelectedListener(this);
-            List<String> provinces = new ArrayList<>();
-            provinces.add("Alberta");
-            provinces.add("British Columbia");
-            provinces.add("Manitoba");
-            provinces.add("New Brunswick");
-            provinces.add("Newfoundland and Labrador");
-            provinces.add("Nunavut");
-            provinces.add("Ontario");
-            provinces.add("Prince Edward Island");
-            provinces.add("Quebec");
-            provinces.add("Saskatchewan");
-            provinces.add("Yukon");
+            TextView checkoutname = findViewById(R.id.diekoet);
+            TextView checkoutaddress = findViewById(R.id.diekoaddress);
+            TextView checkoutpostc = findViewById(R.id.diekopostc);
+            RadioButton size = findViewById(R.id.diekosm);
 
+            Intent intent = new Intent(AkinrowoActivity2.this, AkinrowoActivity3.class);
+            intent.putExtra("Name", checkoutname.getText().toString());
+            intent.putExtra("Address", checkoutaddress.getText().toString());
+            intent.putExtra("Postcode", checkoutpostc.getText().toString());
 
-            ArrayAdapter array = new ArrayAdapter(this, android.R.layout.simple_spinner_item, provinces);
-            array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            province.setAdapter(array);
-
-        TextView checkoutname = findViewById(R.id.diekoet);
-        TextView checkoutaddress = findViewById(R.id.diekoaddress);
-        TextView checkoutpostc= findViewById(R.id.diekopostc);
-
-        Intent intent = new Intent(AkinrowoActivity2.this,AkinrowoActivity3.class);
-        intent.putExtra("Name", checkoutname.getText().toString());
-        intent.putExtra("Address", checkoutaddress.getText().toString());
-        intent.putExtra("Postcode", checkoutpostc.getText().toString());
-        startActivity(intent);
-
+            startActivity(intent);
         });
 
 //        TextView checkoutname = findViewById(R.id.diekoet);
@@ -136,7 +137,7 @@ public class AkinrowoActivity2 extends AppCompatActivity implements AdapterView.
 //        intent.putExtra("Name", checkoutname.getText().toString());
 //        intent.putExtra("Address", checkoutaddress.getText().toString());
 //        intent.putExtra("Postcode", checkoutpostc.getText().toString());
-//        startActivity(intent);
+//
     }
 
         @Override
@@ -147,9 +148,6 @@ public class AkinrowoActivity2 extends AppCompatActivity implements AdapterView.
         public void onNothingSelected (AdapterView < ? > parent){
 //do nothing
         }
-
-
-
 
 }
 

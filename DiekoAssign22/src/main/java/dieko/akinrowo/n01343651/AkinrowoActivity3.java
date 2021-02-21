@@ -2,6 +2,10 @@ package dieko.akinrowo.n01343651;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,16 +20,13 @@ public class AkinrowoActivity3 extends AppCompatActivity {
         setContentView(activity_final);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        TextView UserInput1 = findViewById(R.id.diekoet);
-////        TextView UserInput2 = findViewById(R.id.diekoaddress);
-////        TextView UserInput3 = findViewById(R.id.diekopostc);
-//        Intent intent = getIntent();
-////        String str1 = intent.getStringExtra("Name");
-////        String str2 = intent.getStringExtra("Address");
-////        String str3 = intent.getStringExtra("Postcode");
-//
-//        UserInput1.setText(getIntent().getStringExtra("Name"));
-//        UserInput1.setText(getIntent().getStringExtra("Name"));
-//        UserInput1.setText(getIntent().getStringExtra("Name"));
+        TextView UserInput1 = findViewById(R.id.diekoname_view);
+        TextView UserInput2 = findViewById(R.id.diekoaddress_View);
+        TextView UserInput3 = findViewById(R.id.diekospinnerView);
+        UserInput1.setText(getIntent().getStringExtra("Name"));
+        UserInput2.setText(getIntent().getStringExtra("Address"));
+        UserInput3.setText(getIntent().getStringExtra("Postcode"));
+
+
     }
 }

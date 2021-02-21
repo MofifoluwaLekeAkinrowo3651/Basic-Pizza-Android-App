@@ -42,5 +42,6 @@
     <string name="enter_name">Please enter name</string>
     <string name="enter_card">Please card number</string>
     <string name="order_placed">ORDER PLACED</string>
+    <string name="order_details">ORDER DETAILS</string>
 
 </resources>
