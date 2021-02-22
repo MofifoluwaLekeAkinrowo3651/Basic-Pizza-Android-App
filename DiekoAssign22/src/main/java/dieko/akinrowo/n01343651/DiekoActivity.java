@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,17 +11,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class DiekoActivity extends AppCompatActivity {
 
     final Context context = this;
     RadioButton PizzaP, Dominos, PizzaHut;
-    RadioGroup radio;
+//    RadioGroup radio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +31,14 @@ public class DiekoActivity extends AppCompatActivity {
         PizzaHut = findViewById(R.id.dieko_phut);
 
         Button btn = findViewById(R.id.diekonext1);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String str = getString(R.string.load_mess);
-                String error="Please select a store.";
-                if(!PizzaP.isChecked() && !Dominos.isChecked() && !PizzaHut.isChecked()){
-                    Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
-                    newActivity();
-                }
+        btn.setOnClickListener(v -> {
+            String str = getString(R.string.load_mess);
+            String error="Please select a store.";
+            if(!PizzaP.isChecked() && !Dominos.isChecked() && !PizzaHut.isChecked()){
+                Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
+                newActivity();
             }
         });
     }
@@ -128,7 +122,7 @@ return true;
 
                     Toast.makeText(getApplicationContext(), "Bye bye!",
                             Toast.LENGTH_LONG).show();
-                    System.exit(2);
+                    System.exit(0);
                 })
 
                 .setNegativeButton("No", (dialog, id) -> dialog.cancel());
