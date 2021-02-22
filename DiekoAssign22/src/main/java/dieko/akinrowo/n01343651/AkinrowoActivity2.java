@@ -47,28 +47,42 @@ public class AkinrowoActivity2 extends AppCompatActivity implements AdapterView.
         provinces.add("Saskatchewan");
         provinces.add("Yukon");
 
-
         ArrayAdapter array = new ArrayAdapter(this, android.R.layout.simple_spinner_item, provinces);
         array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         province.setAdapter(array);
 
         Button order = findViewById(R.id.diekoorder);
         order.setOnClickListener(v -> {
-            if (name.getText().toString().trim().equalsIgnoreCase("")) {
-                name.setError(getString(R.string.enter_name));
-            }
-            if (credit_card.getText().toString().trim().equalsIgnoreCase("")) {
-                credit_card.setError(getString(R.string.enter_card));
-            }
-            if (sec_pin.getText().toString().trim().equalsIgnoreCase("")) {
-                sec_pin.setError("Please enter pin");
-            }
-            if (postcode.getText().toString().trim().equalsIgnoreCase("")) {
-                postcode.setError("Please enter postcode");
-            }
-            if (address.getText().toString().trim().equalsIgnoreCase("")) {
-                address.setError("Please enter address");
-            }
+                    if (name.getText().toString().trim().equalsIgnoreCase("")) {
+                        name.setError(getString(R.string.enter_name));
+                    }
+                    if (credit_card.getText().toString().trim().equalsIgnoreCase("")) {
+                        credit_card.setError(getString(R.string.enter_card));
+                    }
+                    if (sec_pin.getText().toString().trim().equalsIgnoreCase("")) {
+                        sec_pin.setError("Please enter pin");
+                    }
+                    if (postcode.getText().toString().trim().equalsIgnoreCase("")) {
+                        postcode.setError("Please enter postcode");
+                    }
+                    if (address.getText().toString().trim().equalsIgnoreCase("")) {
+                        address.setError("Please enter address");
+                    }
+                    else {
+                        newActivity();
+                    }
+
+            TextView checkoutname = findViewById(R.id.diekoet);
+            TextView checkoutaddress = findViewById(R.id.diekoaddress);
+            TextView checkoutpostc = findViewById(R.id.diekopostc);
+
+            Intent intent = new Intent(AkinrowoActivity2.this, AkinrowoActivity3.class);
+            intent.putExtra("Name", checkoutname.getText().toString());
+            intent.putExtra("Address", checkoutaddress.getText().toString());
+            intent.putExtra("Postcode", checkoutpostc.getText().toString());
+            startActivity(intent);
+
+                });
 
             name.setOnKeyListener(new View.OnKeyListener() {
                 @Override
@@ -116,30 +130,12 @@ public class AkinrowoActivity2 extends AppCompatActivity implements AdapterView.
                 }
             });
 
-            TextView checkoutname = findViewById(R.id.diekoet);
-            TextView checkoutaddress = findViewById(R.id.diekoaddress);
-            TextView checkoutpostc = findViewById(R.id.diekopostc);
-            RadioButton size = findViewById(R.id.diekosm);
+        }
 
-            Intent intent = new Intent(AkinrowoActivity2.this, AkinrowoActivity3.class);
-            intent.putExtra("Name", checkoutname.getText().toString());
-            intent.putExtra("Address", checkoutaddress.getText().toString());
-            intent.putExtra("Postcode", checkoutpostc.getText().toString());
-
-            startActivity(intent);
-        });
-
-//        TextView checkoutname = findViewById(R.id.diekoet);
-//        TextView checkoutaddress = findViewById(R.id.diekoaddress);
-//        TextView checkoutpostc= findViewById(R.id.diekopostc);
-//
-//        Intent intent = new Intent(AkinrowoActivity2.this,AkinrowoActivity3.class);
-//        intent.putExtra("Name", checkoutname.getText().toString());
-//        intent.putExtra("Address", checkoutaddress.getText().toString());
-//        intent.putExtra("Postcode", checkoutpostc.getText().toString());
-//
+    public void newActivity(){
+        Intent intent = new Intent(AkinrowoActivity2.this, AkinrowoActivity3.class);
+        startActivity(intent);
     }
-
         @Override
         public void onItemSelected (AdapterView < ? > parent, View view,int position, long id){
 //do nothing

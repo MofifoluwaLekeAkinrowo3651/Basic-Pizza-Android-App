@@ -44,5 +44,6 @@
     <string name="order_placed">ORDER PLACED</string>
     <string name="order_details">ORDER DETAILS</string>
     <string name="select_pickup_delivery_time">Select pickup/delivery time</string>
+    <string name="done">DONE</string>
 
 </resources>
