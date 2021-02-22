@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--    Dieko Akinrowo, N01343651 Section D-->
 <resources>
-    <item name="pizza_choice" type="id"></item>
-    <item name="diekoimg1" type="id"></item>
-    <item name="diekoimg2" type="id"></item>
-    <item name="diekoimg3" type="id"></item>
+    <item name="pizza_choice" type="id" />
+    <item name="diekoimg1" type="id" />
+    <item name="diekoimg2" type="id" />
+    <item name="diekoimg3" type="id" />
 </resources>
