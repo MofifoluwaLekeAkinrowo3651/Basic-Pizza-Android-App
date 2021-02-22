@@ -1,34 +1,20 @@
 package dieko.akinrowo.n01343651;
 
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 import static dieko.akinrowo.n01343651.R.layout.activity_final;
 
 
 public class AkinrowoActivity3 extends AppCompatActivity {
-    EditText date_time;
+//    EditText date_time;
     final Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +31,7 @@ public class AkinrowoActivity3 extends AppCompatActivity {
         UserInput3.setText(getIntent().getStringExtra("Postcode"));
 
         Button button = findViewById(R.id.diekodone);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onDone();
-            }
-        });
+        button.setOnClickListener(v -> onDone());
     }
 
     public void newActivity(){
